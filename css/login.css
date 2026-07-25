@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#F4EFE6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.contenedor{
+    width:400px;
+    background:#FFFFFF;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.regresar{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#3D5A40;
+    color:#FFFFFF;
+    cursor:pointer;
+    font-size:18px;
+}
+
+#daltonismo{
+    border:none;
+    background:#3D5A40;
+    color:#FFFFFF;
+    padding:10px 15px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.logo img{
+    width:120px;
+}
+
+h1{
+    text-align:center;
+    color:#3D5A40;
+    margin-bottom:10px;
+}
+
+p{
+    text-align:center;
+    color:#666666;
+    margin-bottom:20px;
+}
+
+.campo{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:15px;
+}
+
+label{
+    color:#3D5A40;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+input{
+    padding:12px;
+    border:1px solid #CCCCCC;
+    border-radius:10px;
+    font-size:15px;
+}
+
+input:focus{
+    border:2px solid #3D5A40;
+    outline:none;
+}
+
+#verPassword{
+    margin-top:8px;
+    border:none;
+    background:#3D5A40;
+    color:white;
+    padding:8px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.boton{
+    width:100%;
+    padding:14px;
+    background:#3D5A40;
+    color:white;
+    border:none;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.boton:hover{
+    background:#2A412E;
+}
+
+.registro{
+    text-align:center;
+    margin-top:20px;
+}
+
+.registro a{
+    color:#3D5A40;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+body.daltonismo{
+    background:#FFFFFF;
+}
+
+body.daltonismo .contenedor{
+    background:#000000;
+}
+
+body.daltonismo h1,
+body.daltonismo p,
+body.daltonismo label,
+body.daltonismo .registro{
+    color:#FFFFFF;
+}
+
+body.daltonismo input{
+    background:#FFFFFF;
+    color:#000000;
+}
+
+body.daltonismo .boton,
+body.daltonismo .regresar,
+body.daltonismo #daltonismo,
+body.daltonismo #verPassword{
+    background:#0057B8;
+}
+
+@media(max-width:480px){
+
+.contenedor{
+    width:95%;
+}
+
+.logo img{
+    width:100px;
+}
+
+}

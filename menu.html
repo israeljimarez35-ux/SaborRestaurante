@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Menú | Sabor Restaurante</title>
+
+<link rel="stylesheet" href="../css/menu.css">
+
+</head>
+
+<body>
+
+<header>
+
+<button onclick="window.location.href='inicio.html'" class="volver">
+← Inicio
+</button>
+
+<h2>Sabor Restaurante</h2>
+
+<button id="daltonismo">
+👁️ Daltonismo
+</button>
+
+</header>
+
+<section class="titulo">
+
+<h1>Nuestro Menú</h1>
+
+<p>Selecciona los platillos que deseas ordenar.</p>
+
+</section>
+
+<section class="menu">
+
+<!-- HAMBURGUESA -->
+
+<div class="platillo">
+
+<img src="../imagenes/hamburguesa.jpeg" alt="Hamburguesa">
+
+<h3>Hamburguesa Especial</h3>
+
+<p>$120.00</p>
+
+<form action="../php/agregarCarrito.php" method="POST">
+
+<input type="hidden" name="id_producto" value="1">
+
+<button type="submit">
+Agregar al carrito
+</button>
+
+</form>
+
+</div>
+
+<!-- PIZZA -->
+
+<div class="platillo">
+
+<img src="../imagenes/pizzafamiliar.jpg" alt="Pizza">
+
+<h3>Pizza Familiar</h3>
+
+<p>$180.00</p>
+
+<form action="../php/agregarCarrito.php" method="POST">
+
+<input type="hidden" name="id_producto" value="2">
+
+<button type="submit">
+Agregar al carrito
+</button>
+
+</form>
+
+</div>
+
+<!-- PASTA -->
+
+<div class="platillo">
+
+<img src="../imagenes/pasta.jpeg" alt="Pasta">
+
+<h3>Pasta Alfredo</h3>
+
+<p>$145.00</p>
+
+<form action="../php/agregarCarrito.php" method="POST">
+
+<input type="hidden" name="id_producto" value="3">
+
+<button type="submit">
+Agregar al carrito
+</button>
+
+</form>
+
+</div>
+
+<!-- ENSALADA -->
+
+<div class="platillo">
+
+<img src="../imagenes/ensaladacesar.webp" alt="Ensalada">
+
+<h3>Ensalada César</h3>
+
+<p>$95.00</p>
+
+<form action="../php/agregarCarrito.php" method="POST">
+
+<input type="hidden" name="id_producto" value="4">
+
+<button type="submit">
+Agregar al carrito
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<button onclick="window.location.href='carrito.html'">
+Ver Carrito
+</button>
+
+<button onclick="window.location.href='inicio.html'">
+Regresar
+</button>
+
+</footer>
+
+<script src="../js/menu.js"></script>
+
+</body>
+
+</html>

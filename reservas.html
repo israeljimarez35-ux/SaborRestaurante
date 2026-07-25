@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reservas | Sabor Restaurante</title>
+
+<link rel="stylesheet" href="../css/reservas.css">
+
+</head>
+
+<body>
+
+<header>
+
+<button class="volver" onclick="window.location.href='inicio.html'">
+
+← Inicio
+
+</button>
+
+<h2>Reservar Mesa</h2>
+
+<button id="daltonismo">
+
+👁️ Daltonismo
+
+</button>
+
+</header>
+
+<div class="contenedor">
+
+<h1>Reserva una Mesa</h1>
+
+<p>Completa el siguiente formulario.</p>
+
+<form action="../php/guardarReserva.php" method="POST">
+
+<div class="campo">
+
+<label>Fecha</label>
+
+<input
+type="date"
+name="fecha"
+required>
+
+</div>
+
+<div class="campo">
+
+<label>Hora</label>
+
+<input
+type="time"
+name="hora"
+required>
+
+</div>
+
+<div class="campo">
+
+<label>Número de Personas</label>
+
+<input
+type="number"
+name="personas"
+min="1"
+max="20"
+required>
+
+</div>
+
+<div class="campo">
+
+<label>Teléfono</label>
+
+<input
+type="text"
+name="telefono"
+maxlength="10"
+required>
+
+</div>
+
+<button
+type="submit"
+class="boton">
+
+Confirmar Reserva
+
+</button>
+
+</form>
+
+<div class="botones">
+
+<button onclick="window.location.href='inicio.html'">
+
+Regresar
+
+</button>
+
+<button onclick="window.location.href='menu.html'">
+
+Ir al Menú
+
+</button>
+
+</div>
+
+</div>
+
+<script src="../js/reservas.js"></script>
+
+</body>
+
+</html>

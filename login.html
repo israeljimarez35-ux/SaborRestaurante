@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar Sesión | Sabor Restaurante</title>
+
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<header>
+
+<button class="regresar" onclick="window.location.href='index.html'">
+←
+</button>
+
+<button id="daltonismo">
+👁️ Daltonismo
+</button>
+
+</header>
+
+<div class="logo">
+
+<img src="../imagenes/WhatsApp Image 2026-07-02 at 10.55.32 PM.jpeg">
+
+</div>
+
+<h1>Iniciar Sesión</h1>
+
+<p>
+Bienvenido nuevamente.
+</p>
+
+<form action="../php/login.php" method="POST">
+
+<div class="campo">
+
+<label>Correo electrónico</label>
+
+<input
+type="email"
+name="correo"
+required>
+
+</div>
+
+<div class="campo">
+
+<label>Contraseña</label>
+
+<input
+type="password"
+id="password"
+name="password"
+required>
+
+<button
+type="button"
+id="verPassword">
+
+Mostrar
+
+</button>
+
+</div>
+
+<button
+type="submit"
+class="boton">
+
+Iniciar Sesión
+
+</button>
+
+</form>
+
+<div class="registro">
+
+¿No tienes cuenta?
+
+<a href="../html/index.html">
+
+Crear cuenta
+
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/login.js"></script>
+
+</body>
+
+</html>

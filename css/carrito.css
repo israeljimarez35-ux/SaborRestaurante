@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#F4EFE6;
+}
+
+
+header{
+    background:#3D5A40;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
+
+header h2{
+    font-size:24px;
+}
+
+.volver{
+    background:white;
+    color:#3D5A40;
+    border:none;
+    padding:10px 15px;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+#daltonismo{
+    background:white;
+    color:#3D5A40;
+    border:none;
+    padding:10px 15px;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+
+.contenedor{
+    width:95%;
+    max-width:1000px;
+    margin:30px auto;
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.contenedor h1{
+    text-align:center;
+    color:#3D5A40;
+    margin-bottom:20px;
+}
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#3D5A40;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#F8F8F8;
+}
+
+
+button{
+    cursor:pointer;
+}
+
+.mas,
+.menos{
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:50%;
+    background:#3D5A40;
+    color:white;
+    font-size:18px;
+}
+
+.eliminar{
+    border:none;
+    background:#B22222;
+    color:white;
+    padding:8px 12px;
+    border-radius:10px;
+}
+
+
+.total{
+    text-align:right;
+    margin-top:20px;
+}
+
+.total h2{
+    color:#3D5A40;
+}
+
+
+.botones{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+}
+
+.botones button{
+    width:48%;
+    padding:14px;
+    border:none;
+    border-radius:20px;
+    background:#3D5A40;
+    color:white;
+    font-size:16px;
+}
+
+.botones button:hover{
+    background:#2A412E;
+}
+
+
+body.daltonismo{
+    background:white;
+}
+
+body.daltonismo header{
+    background:#0057B8;
+}
+
+body.daltonismo .contenedor{
+    background:black;
+}
+
+body.daltonismo h1,
+body.daltonismo h2,
+body.daltonismo td{
+    color:white;
+}
+
+body.daltonismo th{
+    background:#0057B8;
+}
+
+body.daltonismo .mas,
+body.daltonismo .menos,
+body.daltonismo .botones button,
+body.daltonismo #daltonismo,
+body.daltonismo .volver{
+    background:#0057B8;
+}
+
+
+@media(max-width:768px){
+
+table{
+    font-size:12px;
+}
+
+.botones{
+    flex-direction:column;
+    gap:15px;
+}
+
+.botones button{
+    width:100%;
+}
+
+header{
+    flex-direction:column;
+    gap:10px;
+}
+
+}

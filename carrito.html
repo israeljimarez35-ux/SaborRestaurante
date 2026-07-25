@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Carrito | Sabor Restaurante</title>
+
+<link rel="stylesheet" href="../css/carrito.css">
+
+</head>
+
+<body>
+
+<header>
+
+<button class="volver" onclick="window.location.href='menu.html'">
+← Menú
+</button>
+
+<h2>Mi Carrito</h2>
+
+<button id="daltonismo">
+👁️ Daltonismo
+</button>
+
+</header>
+
+<section class="contenedor">
+
+<h1>Productos Seleccionados</h1>
+
+<div id="contenedorCarrito">
+
+<!-- Aquí se cargarán los productos desde la base de datos -->
+
+</div>
+
+<hr>
+
+<div class="total">
+
+<h2>Total: <span id="total">$0.00</span></h2>
+
+</div>
+
+<div class="botones">
+
+<button onclick="window.location.href='menu.html'">
+Seguir Comprando
+</button>
+
+<button id="confirmarPedido">
+Confirmar Pedido
+</button>
+
+</div>
+
+</section>
+
+<script src="../js/carrito.js"></script>
+<script src="../js/eliminarProducto.js"></script>
+<script src="../js/confirmarPedido.js"></script>
+
+</body>
+
+</html>

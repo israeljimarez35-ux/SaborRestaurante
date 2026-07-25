@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil | Sabor Restaurante</title>
+    <link rel="stylesheet" href="C:\xampp\htdocs\prototipojimarez\css\perfil.css">
+</head>
+<body>
+<header>
+    <button class="volver" onclick="window.location.href='inicio.html'">
+    ← Inicio
+   </button>
+   <h2>Mi Perfil</h2>
+   <button id="daltonismo">
+   👁️ Daltonismo
+   </button>
+</header>
+<div class="contenedor">
+   <div class="perfil">
+   <img src="C:\xampp\htdocs\prototipojimarez\imagenes\perfil.jpg" alt="Usuario" class="foto">
+   <h2>Mi Información</h2>
+   <form id="formPerfil">
+<div class="campo">
+   <label>Nombre</label>
+   <inputtype="text"id="nombre"readonly>
+</div>
+<div class="campo">
+    <label>Correo electrónico</label>
+    <inputtype="email"id="correo"readonly>
+</div>
+<div class="campo">
+    <label>Teléfono</label>
+    <inputtype="text"id="telefono"readonly>
+</div>
+<div class="botones">
+  <buttontype="button"id="editar">
+  Editar Datos
+</button>
+    <buttontype="button"id="guardar"style="display:none;">
+    Guardar
+</button>
+</div>
+</form>
+    <hr>
+    <h2>Cambiar Contraseña</h2>
+    <form action="C:\xampp\htdocs\prototipojimarez\php\cambiarpassword.php" method="POST">
+    <div class="campo">
+    <label>Contraseña actual</label>
+    <inputtype="password"name="actual"required>
+</div>
+
+<div class="campo">
+   <label>Nueva contraseña</label>
+   <inputtype="password"name="nueva"required>
+</div>
+<div class="campo">
+   <label>Confirmar contraseña</label>
+   <inputtype="password"name="confirmar"required>
+</div>
+<button
+  type="submit"
+  class="boton">
+   Cambiar Contraseña
+</button>
+</form>
+<button
+   class="cerrar"
+   onclick="window.location.href='logout.php'">
+Cerrar Sesión
+</button>
+</div>
+<script src="C:\xampp\htdocs\prototipojimarez\js\perfil.js"></script>
+</body>
+</html>
